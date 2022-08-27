@@ -35,11 +35,11 @@
 
         while(i<student.length){
             if(student[i].gpa > 3.20){
-                console.log(student[i].fullname + ' เกิดเมื่อปี ' + (2664-parseInt(student[i].age)) + ' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชา')
+                console.log(student[i].fullname + ' เกิดเมื่อปี ' + (2664-parseInt(student[i].age)) + ' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย')
                 
             }
             else if(student[i].year >= 2 && student[i].help == true && student[i].gpa > 2.75){
-                    console.log(student[i].fullname + ' เกิดเมื่อปี ' + (2664-parseInt(student[i].age)) + ' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชา')
+                    console.log(student[i].fullname + ' เกิดเมื่อปี ' + (2664-parseInt(student[i].age)) + ' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย')
                 }
             else{
                     console.log(student[i].fullname + ' เกิดเมื่อปี ' + (2664-parseInt(student[i].age)) + ' ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์และยังไม่ได้ช่วยงานภาควิชา')
@@ -48,15 +48,16 @@
             i++
         }
         console.log('')
+
         let a = 0
         while(a<student.length){
             console.log('ชั้นปีที่ ' + student[a].year)
             if(student[a].gpa > 3.20){
-                console.log(student[a].fullname + ' เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชา')
+                console.log(student[a].fullname + ' เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย')
                 
             }
             else if(student[a].year >= 2 && student[a].help == true && student[a].gpa > 2.75){
-                    console.log(student[a].fullname + ' เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชา')
+                    console.log(student[a].fullname + ' เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย')
                 }
             else{
                     console.log('ไม่มี')
